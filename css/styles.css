@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: Roboto, Raleway, sans-serif;
   color: #434455;
@@ -5,6 +10,11 @@ body {
 }
 a {
   text-decoration: none;
+}
+.container {
+ max-width: 1158px;
+  padding: 0 15px;
+margin: auto;
 }
 ul {
   list-style-type: none;
@@ -14,9 +24,11 @@ ul {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
-  padding: 0;
 }
 img {
   display: block;
@@ -31,28 +43,63 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   cursor: auto;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 span {
   color: #2e2f42;
   font-weight: 700;
+
 }
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container{
+display: flex;
+align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.list-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.addr-line {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.list-nav-link:first-child:active {
+  text-decoration: underline;
+}
+
 .menu {
+  display: block;
   cursor: auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
   color: #2e2f42;
+  padding: 24px 0;
 }
+
 .menu:hover {
   color: #404bbf;
 }
 
 .addr {
   font-style: normal;
+  margin-left: auto;
 }
 
 .addr-line-info {
+  display: block;
+  padding: 24px 0;
   color: #434455;
   font-weight: 400;
   font-size: 16px;
@@ -65,11 +112,6 @@ span {
   color: #404bbf;
 }
 
-#studio:active,
-#studio:focus {
-  color: #404bbf;
-  text-decoration: underline;
-}
 .effect {
   background-color: #2e2f42;
 }
