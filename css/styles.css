@@ -144,8 +144,9 @@ span {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
+  
 }
 .effect-btn:hover,
 .effect-btn:focus {
@@ -154,7 +155,7 @@ span {
   font-weight: 500;
 }
 
-.section-title-two {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
